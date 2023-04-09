@@ -5,10 +5,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --width: 400px;
+    --height: 250px;
+    --bg: yellow;
+}
+
 .box {
-    width: 400px;
-    height: 250px;
-    background: yellow;
+    width: var(--width);
+    height: var(--height);
+    background: var(--bg);
     color: orange;
     /* border: 1px solid black; */
     /*Shorthand
@@ -49,7 +55,7 @@
     border-left: 30px dotted purple;
 }
 
-h1{
+h1 {
     border: 100px solid;
     border-color: transparent;
     border-left-color: red;
@@ -57,3 +63,53 @@ h1{
     padding: 0;
 }
 
+/* --> PROPIEDAD BORDER RADIUS <-- 
+    
+*/
+:root {
+    --br: 50px;
+}
+
+.box-2 {
+    width: var(--width);
+    height: var(--height);
+    background: var(--bg);
+    /* border: 1px solid; */
+    /* border-radius: 50%; */
+    /*
+    border-top-left-radius: 40px;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 120px;
+    border-bottom-left-radius: 160px;
+     */
+
+    /* border-radiud: x y; */
+    /* border-top-left-radius: 100px 200px;
+    border-top-right-radius: 50px 20px;
+    border-bottom-right-radius: 80px 120px;
+    border-bottom-left-radius: 200px 120px; */
+
+    /* border-radiud: x x x x / y y y y */
+    /* border-radius: 100px 50px / 200px 20px 120px 120px; */
+    border-radius: 70px 110px;
+    background: red;
+    overflow: hidden;
+}
+
+.box-3 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+}
+
+.play {
+    width: 150px;
+    height: 150px;
+    /* background: white; */
+    border: 75px solid;
+    border-color: transparent;
+    border-left-color: white;
+    margin: 50px auto 50px 165px;
+    transform: scaleY(0.65);
+}
