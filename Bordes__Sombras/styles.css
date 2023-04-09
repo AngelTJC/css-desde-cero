@@ -113,3 +113,42 @@ h1 {
     margin: 50px auto 50px 165px;
     transform: scaleY(0.65);
 }
+
+
+/*Propiedad Outline */
+
+.box-4 {
+    width: var(--width);
+    height: var(--height);
+    background: var(--bg);
+    border: 30px solid black;
+    outline: 10px solid red;
+}
+
+/*
+Propiedades box-shadow
+
+box-shadow: h-offset v-offset blur spread color | inset;
+
+*/
+
+body{
+    background: #222;
+}
+
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background: rgb(211, 63, 63);
+    margin: 100px auto;
+    border-radius: 50%;
+    box-shadow:
+        -35px -35px 25px 0 rgba(0, 0, 0, 0.4) inset,
+        15px 15px 30px 0  rgba(255, 255, 255, 0.5) inset,
+        5px 5px 15px  0 rgba(255, 255, 255, .1);
+
+    /* color: cyan; */
+    /* box-shadow: 400px 0 0px  -10px, 800px 0, 200px 200px, 600px 200px; */
+
+}
