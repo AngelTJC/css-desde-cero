@@ -49,7 +49,7 @@ h1 {
     transition: all 1s;
 }
 
-.box p{
+.box p {
     /* display: none; */
 }
 
@@ -69,22 +69,22 @@ h1 {
     :link - :visited - :hover - :active
 */
 
-a:visited{
+a:visited {
     color: crimson;
 }
 
-a:hover{
+a:hover {
     color: green;
 }
 
-a:active{
+a:active {
     color: red;
 }
 
 
 /*  :target  :not   :empty*/
 
-.secreto{
+/* .secreto{
     display: none;
 }
 
@@ -105,4 +105,74 @@ div:not(:empty){
     padding: 1em;
     width: 200px;
 }
+ */
 
+/*  :first-child  :last-child */
+
+.h:first-child {
+    /* background: yellow; */
+}
+
+/*  :first-of-type  :last-of-type */
+
+.p:last-of-type {
+    /* background: yellow; */
+}
+
+/* :nth-child()  :nth-last-child()
+
+    :nth-child(even) or :nth-child(odd)
+    :nth-child(x)  :nth-last-child(x)
+    :nth-child(Xn)  :nth-last-child(Xn)
+    :nth-child(Xn+-Y)  :nth-last-child(Xn+-Y)
+
+*/
+
+
+p:nth-child(2n+1) {
+    /* background: khaki; */
+}
+
+/* TRUCOS CON CSS
+    Encontrar los primeros X elementos
+    Encontrar los ultimos X elementos
+    */
+/* p:nth-child(-n +5) {
+    background-color: cyan;
+}
+
+p:nth-last-child(-n +5) {
+    background-color: cyan;
+} */
+
+
+/* Seleccionar los elementos a partir de un numero X */
+
+/* p:nth-child(n +5){
+    background: yellow;
+    display: none;
+}
+
+p:nth-last-child(n +5){
+    background: yellow;
+    display: none;
+} */
+
+/* Seleccionar todos los elementos pares
+   a partir del quinto elemento */
+/*
+p:nth-child(even):nth-child(n +5){
+    background-color: yellow;
+} */
+
+
+/* :nth-of-type() :nth-last-of-type() */
+
+
+.p:nth-child(3){
+    background: pink;
+}
+
+.p:nth-of-type(3){
+    background-color: skyblue;
+}
