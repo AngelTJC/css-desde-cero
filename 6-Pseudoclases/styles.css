@@ -1,0 +1,108 @@
+/*  Pseudoclases
+
+    Permiten seleccionar elementos segun su estado o alguna condición.
+    Se indican con dos puntos ' : '
+*/
+
+/*
+:hover {
+    cualquier elemento
+
+    background: yellow;
+
+}
+
+
+h1:hover {
+
+    Todos los h1
+
+    background: yellowgreen;
+}
+
+h1 :hover {
+    Cualquier hijo de h1
+
+    background: lawngreen;
+}
+
+*/
+
+
+:root {
+    /*Elemento html*/
+    --color: pink;
+}
+
+h1 {
+    background-color: var(--color);
+}
+
+/*------------------****************---------------*/
+
+/*  :hover  :active  :visited */
+
+.box {
+    background: yellow;
+    width: 400px;
+    height: 250px;
+    transition: all 1s;
+}
+
+.box p{
+    /* display: none; */
+}
+
+.box:hover p {
+    /* display: block; */
+}
+
+.box:hover {
+
+    /* background-color: pink;
+    width: 300px;
+    height: 180px; */
+}
+
+/*
+    colocar en el orden LVHA
+    :link - :visited - :hover - :active
+*/
+
+a:visited{
+    color: crimson;
+}
+
+a:hover{
+    color: green;
+}
+
+a:active{
+    color: red;
+}
+
+
+/*  :target  :not   :empty*/
+
+.secreto{
+    display: none;
+}
+
+#secreto:target{
+    display: block;
+}
+
+p{
+    margin: 0;
+}
+
+p:not(:last-child){
+    margin-bottom: 1rem;
+}
+
+div:not(:empty){
+    background-color: yellow;
+    padding: 1em;
+    width: 200px;
+}
+
