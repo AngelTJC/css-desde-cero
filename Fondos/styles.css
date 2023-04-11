@@ -1,0 +1,15 @@
+/* Backgrounds (Fondos)
+
+backgrounds es un shorthand
+
+background:red;
+background-color:red;
+
+*/
+
+body{
+    background-color:yellow;
+    background-image: url(./pngwing.com.png);
+    background-repeat:repeat-x;
+    background-repeat: repeat-y;
+}
