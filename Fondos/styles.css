@@ -6,9 +6,12 @@ background:red;
 background-color:red;
 
 */
-*{
+*,
+*::before,
+::after{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html,body{
@@ -19,7 +22,7 @@ html,body{
 }
 
 body{
-    background-color:yellow;
+    background-color:#eee;
     background-image: url(./pngwing.com.png);
     background-repeat:repeat-x;
     background-repeat: no-repeat;
@@ -27,8 +30,28 @@ body{
 
 /*  Background-size background-position */
 body{
-    background-size: cover;
+    /* background-size: cover; */
     /* background-size: contain | cover; */
-    background-image: url(./marvin-meyer-SYTO3xs06fU-unsplash.jpg);
+    /* background-image: url(./marvin-meyer-SYTO3xs06fU-unsplash.jpg); */
+    background-size: 50px;
+
+    /* background-position: left center right | top center bottom */
+
+    background-position: bottom 20px right 30px;
+
 }
 
+/*  background-clip  background-origin*/
+.box{
+    width: 600px;
+    height: 400px;
+    background-image: url(https://images.pexels.com/photos/4101555/pexels-photo-4101555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    margin: 100px auto;
+    border: 25px solid;
+    border-color: rgb(12, 7, 7) rgb(105, 84, 84);
+    background-clip:content-box;
+    padding: 50px;
+    box-shadow: 0 10px 30px 0 #5f5f5f;
+    background-origin: content-box;
+}
