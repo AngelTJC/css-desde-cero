@@ -22,25 +22,25 @@ body {
 
 }
 
-body {
+/* body {
     background-color: #eee;
     background-image: url(./pngwing.com.png);
     background-repeat: repeat-x;
     background-repeat: no-repeat;
-}
+} */
 
 /*  Background-size background-position */
-body {
+/* body { */
     /* background-size: cover; */
     /* background-size: contain | cover; */
     /* background-image: url(./marvin-meyer-SYTO3xs06fU-unsplash.jpg); */
-    background-size: 50px;
+    /* background-size: 50px; */
 
     /* background-position: left center right | top center bottom */
 
     /* background-position: bottom 20px right 30px; */
 
-}
+/* } */
 
 /*  background-clip  background-origin*/
 /* .box{
@@ -61,17 +61,50 @@ body {
 
 /* Background attachment */
 
-.box {
+/* .box {
     width: 600px;
     height: 400px;
     background-image: url(./home.jpg);
     margin: 600px auto;
     background-attachment: fixed;
-    background-size: 1920px;
+    background-size: 100vw;
 }
 
 body {
     background-image: url(./home-black-white.jpg);
     background-attachment:fixed;
-    background-size: 1920px;
+    background-size:100vw;
+} */
+
+/* body{
+    background-image: url(./desktop.jpg), url(./home.jpg), url(./verde.jpg);
+    background-color: yellow;
+    background-size: 20%, 20%, 30%;
+    background-repeat: no-repeat;
+    background-position: 0 0, center center,right bottom;
+} */
+
+
+/* shorthand background
+
+    boackground: image position / size repeat attachment origin clip , color(al final);
+*/
+
+
+body{
+    /* background:
+        url(./desktop.jpg) 0 0 / 20% no-repeat,
+        url(./home.jpg) center center / 20% no-repeat,
+        url(./verde.jpg) right bottom / 30% no-repeat,
+        yellow;
+    */
+    background:
+        url(./desktop.jpg) 0 0,
+        url(./home.jpg) center center,
+        url(./verde.jpg) right bottom,
+        yellow;
+
+    background-repeat: no-repeat;
+    background-size: 20%;
+
 }
