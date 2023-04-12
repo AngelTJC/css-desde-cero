@@ -14,11 +14,11 @@ h1 {
     box-shadow: 5px 5px 5px 5px currentColor; */
 }
 
-p{
+p {
     color: lime;
 }
 
-a{
+a {
     color: currentColor;
 }
 
@@ -30,7 +30,7 @@ a{
 
 */
 
-body{
+body {
     background-color: rebeccapurple;
 }
 
@@ -49,22 +49,60 @@ body{
     rgb(0-255,0-255,0-255)
 */
 
-body{
-    background-color: rgb(255, 0, 0);/* R*/
-    background-color: rgb(0, 255, 0);/* G */
-    background-color: rgb(0, 0, 255);/* B */
+body {
+    background-color: rgb(255, 0, 0);
+    /* R*/
+    background-color: rgb(0, 255, 0);
+    /* G */
+    background-color: rgb(0, 0, 255);
+    /* B */
 
-    background-color: rgb(0, 255, 255);/* C */
-    background-color: rgb(255, 0, 255);/* M */
-    background-color: rgb(255, 255, 0);/* Y */
-    background-color: rgb(0, 0, 0); /* K */
-    background-color: rgb(255, 255, 255);/* W */
+    background-color: rgb(0, 255, 255);
+    /* C */
+    background-color: rgb(255, 0, 255);
+    /* M */
+    background-color: rgb(255, 255, 0);
+    /* Y */
+    background-color: rgb(0, 0, 0);
+    /* K */
+    background-color: rgb(255, 255, 255);
+    /* W */
 
 
-    background-color: rgb(128, 128, 128);/* W */
-    background-color: rgb(128, 128, 0);/* W */
+    background-color: rgb(128, 128, 128);
+    /* W */
+    background-color: rgb(128, 128, 0);
 }
 
-h1{
+h1 {
     color: rgba(255, 255, 255, 0.5);
+}
+
+/*  Notación hexadecimal
+
+0 1 2 3 4 5 6 7 8 9 A B C D E F
+0 1 2 3 4 5 6 7 8 9 A B C D E F
+
+    rgb(255, 0 ,0) = #FF0000
+    rgb(0, 255, 0) = #00FF00
+    rgb(0, 0, 255) = #0000FF
+    rgb(0, 0, 0) = #000000
+    rgb(255, 255, 255) = #FFFFFF
+    rgb(128, 128, 128) = #808080
+
+*/
+
+body{
+    background-color: #FF0000;
+    background-color: #00FF00;
+    background-color: #0000FF;
+
+    background-color: #00FFFF;
+    background-color: #FF00FF;
+    background-color: #FFFF00;
+
+    background-color: #000000;
+    background-color: #FFFFFF;
+    background-color: #808080;
+    background-color: #808000;
 }
