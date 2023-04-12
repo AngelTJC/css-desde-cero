@@ -1,0 +1,23 @@
+/* Color
+
+    frente y fondo
+
+*/
+
+body {
+    background-color: black;
+    color: pink;
+}
+
+h1 {
+    border: 1px solid;
+    box-shadow: 5px 5px 5px 5px currentColor;
+}
+
+p{
+    color: lime;
+}
+
+a{
+    color: currentColor;
+}
