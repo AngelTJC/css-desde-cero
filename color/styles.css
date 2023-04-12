@@ -10,8 +10,8 @@ body {
 }
 
 h1 {
-    border: 1px solid;
-    box-shadow: 5px 5px 5px 5px currentColor;
+    /* border: 1px solid;
+    box-shadow: 5px 5px 5px 5px currentColor; */
 }
 
 p{
@@ -32,4 +32,39 @@ a{
 
 body{
     background-color: rebeccapurple;
+}
+
+/*  Mode de color RGB
+
+    Exiten dos modos de color básicos
+        Aditivo (la suma da blanco)
+            RGB(red, green, blue)
+        Sustractivo ( la suma da negro)
+            CMYK (cyan, magenta, yellow, black)
+
+    En el modo RGB tenemos 8 bist de color, significa que cada canal tiene 2^8(0 - 255) variaciones posibles.
+
+    R (255) G (255) B (255)  --> ~ 16,5 millones de colores.
+
+    rgb(0-255,0-255,0-255)
+*/
+
+body{
+    background-color: rgb(255, 0, 0);/* R*/
+    background-color: rgb(0, 255, 0);/* G */
+    background-color: rgb(0, 0, 255);/* B */
+
+    background-color: rgb(0, 255, 255);/* C */
+    background-color: rgb(255, 0, 255);/* M */
+    background-color: rgb(255, 255, 0);/* Y */
+    background-color: rgb(0, 0, 0); /* K */
+    background-color: rgb(255, 255, 255);/* W */
+
+
+    background-color: rgb(128, 128, 128);/* W */
+    background-color: rgb(128, 128, 0);/* W */
+}
+
+h1{
+    color: rgba(255, 255, 255, 0.5);
 }
