@@ -21,3 +21,15 @@ p{
 a{
     color: currentColor;
 }
+
+/*  Color keywords
+
+    palabras clave definidos como: red, purple, white, black, etc. son la forma mas facil de poner colores pero no es la mejor forma.
+
+    El color rebeccapurple tiene una historia conmovedora
+
+*/
+
+body{
+    background-color: rebeccapurple;
+}
