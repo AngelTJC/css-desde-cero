@@ -178,7 +178,7 @@ body {
     background: none;
 }
 
-.box{
+/* .box{
     width: 700px;
     height: 500px;
     border: 1px solid #000;
@@ -188,4 +188,15 @@ body {
 .box{
     background-image: radial-gradient(farthest-corner at 0 0,yellow, red );
     background-size: cover;
+} */
+
+/* Degradados repetidos */
+
+body{
+    /* background-image: radial-gradient(yellow, green); */
+    /* background-size: 20% 20%; */
+    /* background-image: repeating-radial-gradient(white 0, white 5%,black 5%, black 10%); */
+
+    background-image: repeating-linear-gradient(white 0px,white 40px,black 40px, black 41px);
+
 }
