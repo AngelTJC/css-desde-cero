@@ -136,16 +136,56 @@ body {
 
 */
 
-body{
+body {
     width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
 }
 
-body {
+/* body {
     background-image: linear-gradient(yellow 25%, red 25%,red 60%, green 60%);
     background-image: linear-gradient(to bottom right, yellow, red );
     background-repeat: no-repeat;
     background-size: 500px 200px;
+}
+ */
+
+
+/* Degradados radiales
+
+    background-image: radial-gradient(color1, color2, color3);
+
+    background-image: radial-gradient(color1 [stop], color2 [stop], color3 [stop]);
+
+    background-image: radial-gradient([at x y] ,color1 [stop], color2 [stop], color3 [stop]);
+
+    background-image: radial-gradient([size shape] [at x y] ,color1 [stop], color2 [stop], color3 [stop]);
+
+    Palabras clave para indicar el tamaño_
+        *   closet-side
+        *   farthest-side
+        *   closest-corner
+        *   farthest-corner
+
+
+*/
+
+body {
+
+    background-image: radial-gradient(at 0 -50%,yellow 50%, red 50%);
+    background-image: radial-gradient(300px 300px at 50% 50%,yellow 50%, red 50%);
+    background: none;
+}
+
+.box{
+    width: 700px;
+    height: 500px;
+    border: 1px solid #000;
+    margin: 50px auto;
+}
+
+.box{
+    background-image: radial-gradient(farthest-corner at 0 0,yellow, red );
+    background-size: cover;
 }
